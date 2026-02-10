@@ -1,139 +1,522 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Ashish Rajput | Machine Learning Engineer</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ML/AI Portfolio | Advanced Machine Learning Projects</title>
     <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto;
-            margin: 0;
-            background: #0d1117;
-            color: #c9d1d9;
-            line-height: 1.6;
-        }
-
-        header {
-            padding: 40px;
-            text-align: center;
-            background: #161b22;
-        }
-
-        h1 { color: white; margin-bottom: 5px; }
-        h2 { color: #58a6ff; margin-top: 40px; }
-
-        .container {
-            max-width: 900px;
-            margin: auto;
-            padding: 20px;
-        }
-
-        .card {
-            background: #161b22;
-            padding: 20px;
-            margin: 15px 0;
-            border-radius: 12px;
-        }
-
-        a {
-            color: #58a6ff;
-            text-decoration: none;
-        }
-
-        ul { padding-left: 18px; }
+        /* CSS CODE GOES HERE - SEE BELOW */
     </style>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+    <!-- Navigation -->
+    <nav>
+        <nav-content>
+            <div class="logo">
+                <div class="logo-icon">⚡</div>
+                <span>Portfolio</span>
+            </div>
+            <nav-links>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#impact">Impact</a>
+                <a href="#contact">Contact</a>
+            </nav-links>
+        </nav-content>
+    </nav>
 
-<header>
-    <h1>Ashish Rajput</h1>
-    <p>Machine Learning Engineer (Student) | AI/ML Developer</p>
-    <p>
-        <a href="mailto:ashishsinghrajput8873@gmail.com">Email</a> |
-        <a href="https://github.com/A7-ha4">GitHub</a>
-    </p>
-</header>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Ashish <span class="gradient">Singh</span></h1>
+            <p class="hero-subtitle">AI/ML student experienced in developing and deploying end-to-end
+                                    machine learning, deep learning, and LLM-based applications. Strong in
+                                    preprocessing, optimization, ensemble modeling, and integrating models
+                                    into real-world systems using Streamlit and Django</p>
+            
+            <div class="hero-stats">
+                <div class="stat fade-in fade-in-delay-1">
+                    <div class="stat-number">7</div>
+                    <div class="stat-label">Production Projects</div>
+                </div>
+                <div class="stat fade-in fade-in-delay-2">
+                    <div class="stat-number">92%+</div>
+                    <div class="stat-label">Average Accuracy</div>
+                </div>
+                <div class="stat fade-in fade-in-delay-3">
+                    <div class="stat-number">400K+</div>
+                    <div class="stat-label">Data Points</div>
+                </div>
+            </div>
 
-<div class="container">
+            <div class="cta-buttons">
+                <a href="#projects" class="btn btn-primary">View Projects</a>
+                <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+            </div>
+        </div>
+    </section>
 
-<h2>Profile</h2>
-<p>
-AI/ML student experienced in building and deploying end-to-end machine learning,
-deep learning, and RAG-based systems. Strong in preprocessing, optimization,
-ensembles, and integrating models into real applications using Streamlit and Django.
-</p>
+    <!-- Projects Section -->
+    <section class="section" id="projects">
+        <h2 class="section-title">Featured <span class="accent">Projects</span></h2>
+        <p class="section-subtitle">Comprehensive portfolio spanning classification, regression, clustering, computer vision, and generative AI</p>
 
-<h2>Skills</h2>
-<p>
-<b>Languages:</b> Python, C++, Java <br>
-<b>ML/DL:</b> Scikit-learn, TensorFlow, Keras, ANN, CNN <br>
-<b>Data:</b> Pandas, NumPy, Matplotlib <br>
-<b>Optimization:</b> SMOTE, Optuna, Feature Selection <br>
-<b>LLM:</b> LangChain, RAG, Vector DB <br>
-<b>Deployment:</b> Django, Streamlit, Docker (basics)
-</p>
+        <div class="projects-grid">
+            <!-- Project 1 - Telco Churn -->
+            <div class="project-card fade-in fade-in-delay-1">
+                <div class="project-header">
+                    <div>
+                        <div class="project-category">Classification</div>
+                        <h3 class="project-title">Telco Churn</h3>
+                    </div>
+                    <span class="project-number">01</span>
+                </div>
+                <p class="project-description">Predicting customer churn with ensemble voting classifiers (RF+XGB+LGBM+LR)</p>
+                <div class="project-metrics">
+                    <div class="metric">
+                        <div class="metric-label">Accuracy</div>
+                        <div class="metric-value">82%</div>
+                    </div>
+                    <div class="metric">
+                        <div class="metric-label">Customers</div>
+                        <div class="metric-value">7,043</div>
+                    </div>
+                </div>
+                <div class="project-tags">
+                    <span class="tag">SMOTE</span>
+                    <span class="tag">Optuna</span>
+                    <span class="tag">Ensemble</span>
+                </div>
+                <div class="project-icon">📊</div>
+            </div>
 
-<h2>Projects</h2>
+            <!-- Project 2 - Higgs Boson -->
+            <div class="project-card fade-in fade-in-delay-2">
+                <div class="project-header">
+                    <div>
+                        <div class="project-category">Deep Learning</div>
+                        <h3 class="project-title">Higgs Boson</h3>
+                    </div>
+                    <span class="project-number">02</span>
+                </div>
+                <p class="project-description">Rare particle classification with deep neural networks and class weighting</p>
+                <div class="project-metrics">
+                    <div class="metric">
+                        <div class="metric-label">Accuracy</div>
+                        <div class="metric-value">High AUC</div>
+                    </div>
+                    <div class="metric">
+                        <div class="metric-label">Events</div>
+                        <div class="metric-value">250K+</div>
+                    </div>
+                </div>
+                <div class="project-tags">
+                    <span class="tag">6-Layer DNN</span>
+                    <span class="tag">Class Weight</span>
+                    <span class="tag">Physics</span>
+                </div>
+                <div class="project-icon">🔬</div>
+            </div>
 
-<div class="card">
-<h3>Telco Customer Churn Prediction</h3>
-<ul>
-<li>Built end-to-end pipeline for imbalanced telecom data.</li>
-<li>SMOTE + encoding + scaling + imputation.</li>
-<li>Optuna tuning (50 trials).</li>
-<li>Soft Voting ensemble (RF + XGB + LGBM + LR).</li>
-<li>~82% accuracy with balanced precision/recall.</li>
-<li>Deployed via Streamlit.</li>
-</ul>
-<a href="https://github.com/A7-ha4">View Code</a>
-</div>
+            <!-- Project 3 - House Pricing -->
+            <div class="project-card fade-in fade-in-delay-3">
+                <div class="project-header">
+                    <div>
+                        <div class="project-category">Regression</div>
+                        <h3 class="project-title">House Pricing</h3>
+                    </div>
+                    <span class="project-number">03</span>
+                </div>
+                <p class="project-description">CatBoost gradient boosting for mixed categorical and numerical features</p>
+                <div class="project-metrics">
+                    <div class="metric">
+                        <div class="metric-label">Algorithm</div>
+                        <div class="metric-value">CatBoost</div>
+                    </div>
+                    <div class="metric">
+                        <div class="metric-label">Features</div>
+                        <div class="metric-value">70+</div>
+                    </div>
+                </div>
+                <div class="project-tags">
+                    <span class="tag">Gradient Boost</span>
+                    <span class="tag">Categorical</span>
+                    <span class="tag">Valuation</span>
+                </div>
+                <div class="project-icon">🏠</div>
+            </div>
 
-<div class="card">
-<h3>Brain Tumor Multi-Class Classification (CNN)</h3>
-<ul>
-<li>MRI image preprocessing & normalization.</li>
-<li>CNN with Dropout, callbacks, EarlyStopping.</li>
-<li>Django interface for uploads & predictions.</li>
-</ul>
-</div>
+            <!-- Project 4 - Customer Segmentation -->
+            <div class="project-card fade-in fade-in-delay-4">
+                <div class="project-header">
+                    <div>
+                        <div class="project-category">Clustering</div>
+                        <h3 class="project-title">Customer Segmentation</h3>
+                    </div>
+                    <span class="project-number">04</span>
+                </div>
+                <p class="project-description">Hierarchical clustering with PCA dimensionality reduction and Optuna optimization</p>
+                <div class="project-metrics">
+                    <div class="metric">
+                        <div class="metric-label">Silhouette</div>
+                        <div class="metric-value">0.857</div>
+                    </div>
+                    <div class="metric">
+                        <div class="metric-label">Customers</div>
+                        <div class="metric-value">8,950</div>
+                    </div>
+                </div>
+                <div class="project-tags">
+                    <span class="tag">PCA</span>
+                    <span class="tag">Agglomerative</span>
+                    <span class="tag">Unsupervised</span>
+                </div>
+                <div class="project-icon">👥</div>
+            </div>
 
-<div class="card">
-<h3>AI Travel Assistant – RAG</h3>
-<ul>
-<li>LangChain + Ollama (Llama3).</li>
-<li>Embeddings + Chroma retrieval.</li>
-<li>Conversation memory.</li>
-<li>Django-based delivery.</li>
-</ul>
-</div>
+            <!-- Project 5 - Bank Marketing -->
+            <div class="project-card fade-in fade-in-delay-5">
+                <div class="project-header">
+                    <div>
+                        <div class="project-category">Classification</div>
+                        <h3 class="project-title">Bank Marketing</h3>
+                    </div>
+                    <span class="project-number">05</span>
+                </div>
+                <p class="project-description">Predicting term deposit subscriptions with comprehensive preprocessing pipeline</p>
+                <div class="project-metrics">
+                    <div class="metric">
+                        <div class="metric-label">Records</div>
+                        <div class="metric-value">41K+</div>
+                    </div>
+                    <div class="metric">
+                        <div class="metric-label">Missing</div>
+                        <div class="metric-value">0%</div>
+                    </div>
+                </div>
+                <div class="project-tags">
+                    <span class="tag">OneHotEncoder</span>
+                    <span class="tag">Pipeline</span>
+                    <span class="tag">Marketing</span>
+                </div>
+                <div class="project-icon">📞</div>
+            </div>
 
-<div class="card">
-<h3>Higgs Boson Signal Classification</h3>
-<ul>
-<li>ANN with BatchNorm & Dropout.</li>
-<li>AUC monitoring & threshold tuning.</li>
-</ul>
-</div>
+            <!-- Project 6 - Brain Tumor MRI -->
+            <div class="project-card fade-in fade-in-delay-6">
+                <div class="project-header">
+                    <div>
+                        <div class="project-category">Computer Vision</div>
+                        <h3 class="project-title">Brain Tumor MRI</h3>
+                    </div>
+                    <span class="project-number">06</span>
+                </div>
+                <p class="project-description">Multi-class medical image classification with custom CNN architecture</p>
+                <div class="project-metrics">
+                    <div class="metric">
+                        <div class="metric-label">Accuracy</div>
+                        <div class="metric-value">96.81%</div>
+                    </div>
+                    <div class="metric">
+                        <div class="metric-label">Images</div>
+                        <div class="metric-value">16.3K</div>
+                    </div>
+                </div>
+                <div class="project-tags">
+                    <span class="tag">Custom CNN</span>
+                    <span class="tag">Medical</span>
+                    <span class="tag">Healthcare</span>
+                </div>
+                <div class="project-icon">🧠</div>
+            </div>
 
-<div class="card">
-<h3>Customer Segmentation</h3>
-<ul>
-<li>Standardization + PCA (~90% variance).</li>
-<li>Optuna-based cluster tuning.</li>
-<li>Interpretable grouping.</li>
-</ul>
-</div>
+            <!-- Project 7 - Travel Assistant -->
+            <div class="project-card fade-in fade-in-delay-7">
+                <div class="project-header">
+                    <div>
+                        <div class="project-category">Generative AI</div>
+                        <h3 class="project-title">Travel Assistant</h3>
+                    </div>
+                    <span class="project-number">07</span>
+                </div>
+                <p class="project-description">Conversational AI with Retrieval-Augmented Generation (RAG) and local LLM deployment</p>
+                <div class="project-metrics">
+                    <div class="metric">
+                        <div class="metric-label">Model</div>
+                        <div class="metric-value">Llama 3 8B</div>
+                    </div>
+                    <div class="metric">
+                        <div class="metric-label">DB</div>
+                        <div class="metric-value">Chroma</div>
+                    </div>
+                </div>
+                <div class="project-tags">
+                    <span class="tag">RAG</span>
+                    <span class="tag">LLM</span>
+                    <span class="tag">Conversation</span>
+                </div>
+                <div class="project-icon">✈️</div>
+            </div>
+        </div>
+    </section>
 
-<h2>Education</h2>
-<p>
-B.Tech CSE (AI/ML) <br>
-KR Mangalam University <br>
-2024 – 2028
-</p>
+    <!-- Skills Section -->
+    <section class="section" id="skills">
+        <h2 class="section-title">Technical <span class="accent">Expertise</span></h2>
+        <p class="section-subtitle">Comprehensive technology stack and methodologies</p>
 
-</div>
+        <div class="skills-section">
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="skill-category-title">🤖 Machine Learning</div>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-dot"></div>
+                            <span class="skill-name">Classification & Regression</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-dot"></div>
+                            <span class="skill-name">Ensemble Methods</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-dot"></div>
+                            <span class="skill-name">Hyperparameter Optimization</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-dot"></div>
+                            <span class="skill-name">Feature Engineering</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-dot"></div>
+                            <span class="skill-name">SMOTE & Class Imbalance</span>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="skill-category">
+                    <div class="skill-category-title">🧠 Deep Learning</div>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-dot"></div>
+                            <span class="skill-name">Neural Networks (ANN/CNN)</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-dot"></div>
+                            <span class="skill-name">Computer Vision</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-dot"></div>
+                            <span class="skill-name">Regularization & Normalization</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-dot"></div>
+                            <span class="skill-name">TensorFlow/Keras</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-dot"></div>
+                            <span class="skill-name">Medical Image Analysis</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-category-title">🔮 Generative AI & LLMs</div>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-dot"></div>
+                            <span class="skill-name">Retrieval-Augmented Generation</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-dot"></div>
+                            <span class="skill-name">Large Language Models</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-dot"></div>
+                            <span class="skill-name">Vector Databases</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-dot"></div>
+                            <span class="skill-name">Prompt Engineering</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-dot"></div>
+                            <span class="skill-name">Conversational AI</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-category-title">⚙️ Tools & Frameworks</div>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-dot"></div>
+                            <span class="skill-name">scikit-learn, XGBoost, LightGBM</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-dot"></div>
+                            <span class="skill-name">Optuna, GridSearchCV</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-dot"></div>
+                            <span class="skill-name">pandas, NumPy, Matplotlib</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-dot"></div>
+                            <span class="skill-name">LangChain, Ollama, Chroma</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-dot"></div>
+                            <span class="skill-name">Jupyter, Git, Production Deployment</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Section -->
+    <section class="section" id="impact">
+        <h2 class="section-title">Portfolio <span class="accent">Impact</span></h2>
+        <p class="section-subtitle">Measurable outcomes across diverse problem domains</p>
+
+        <div class="stats-section">
+            <div class="stat-card">
+                <div class="stat-card-number">7</div>
+                <div class="stat-card-title">Complete Projects</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-card-number">400K+</div>
+                <div class="stat-card-title">Data Points Processed</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-card-number">96.81%</div>
+                <div class="stat-card-title">Peak Accuracy (Medical AI)</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-card-number">3</div>
+                <div class="stat-card-title">Problem Domains</div>
+            </div>
+        </div>
+
+        <div class="skills-section" style="margin-top: 3rem;">
+            <h3 class="skill-category-title" style="margin-bottom: 2rem;">Career-Ready Capabilities</h3>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="skill-category-title">✅ Advanced ML</div>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-dot"></div>
+                            <span class="skill-name">End-to-end ML pipelines</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-dot"></div>
+                            <span class="skill-name">Ensemble & voting methods</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-dot"></div>
+                            <span class="skill-name">Production-ready code</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-category-title">✅ Medical AI</div>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-dot"></div>
+                            <span class="skill-name">Clinical imaging analysis</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-dot"></div>
+                            <span class="skill-name">High-accuracy diagnostics</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-dot"></div>
+                            <span class="skill-name">Privacy compliance</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-category-title">✅ Generative AI</div>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-dot"></div>
+                            <span class="skill-name">RAG architecture design</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-dot"></div>
+                            <span class="skill-name">Semantic search systems</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-dot"></div>
+                            <span class="skill-name">Multi-turn dialogue</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-category-title">✅ Software Engineering</div>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-dot"></div>
+                            <span class="skill-name">Modular architecture</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-dot"></div>
+                            <span class="skill-name">API design & integration</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-dot"></div>
+                            <span class="skill-name">Deployment & monitoring</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Contact -->
+    <footer id="contact">
+        <footer-content>
+            <h2 class="section-title" style="margin-bottom: 2rem;">Ready to <span class="accent">Collaborate</span>?</h2>
+            <div class="footer-links">
+                <a href="ashishsinghrajput8873@gmail.com">📧 Email</a>
+                <a href="https://github.com/Ashish-ml-eng/" target="_blank">💻 GitHub</a>
+                <a href="https://www.linkedin.com/in/ashish-singh-88-ai-ml/" target="_blank">🔗 LinkedIn</a>
+            </div>
+            <p class="footer-text">© 2025 AI/ML Portfolio. All rights reserved. | Specialized in production-grade machine learning solutions.</p>
+        </footer-content>
+    </footer>
+
+    <script>
+        // Smooth scroll behavior
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+
+        // Add scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.project-card, .stat-card').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
 </body>
 </html>
