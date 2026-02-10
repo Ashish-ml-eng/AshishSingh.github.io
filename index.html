@@ -1,66 +1,139 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Ashish Rajput | ML Engineer</title>
+    <title>Ashish Rajput | Machine Learning Engineer</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <style>
         body {
-            font-family: Arial;
-            margin: 40px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto;
+            margin: 0;
             background: #0d1117;
-            color: white;
+            color: #c9d1d9;
+            line-height: 1.6;
         }
-        h1, h2 {
-            color: #58a6ff;
+
+        header {
+            padding: 40px;
+            text-align: center;
+            background: #161b22;
         }
+
+        h1 { color: white; margin-bottom: 5px; }
+        h2 { color: #58a6ff; margin-top: 40px; }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .card {
+            background: #161b22;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 12px;
+        }
+
         a {
             color: #58a6ff;
             text-decoration: none;
         }
-        .card {
-            background: #161b22;
-            padding: 15px;
-            margin: 10px 0;
-            border-radius: 10px;
-        }
+
+        ul { padding-left: 18px; }
     </style>
 </head>
 
 <body>
 
-<h1>Ashish Rajput</h1>
-<p>B.Tech AI/ML Student | Machine Learning Enthusiast</p>
+<header>
+    <h1>Ashish Rajput</h1>
+    <p>Machine Learning Engineer (Student) | AI/ML Developer</p>
+    <p>
+        <a href="mailto:ashishsinghrajput8873@gmail.com">Email</a> |
+        <a href="https://github.com/A7-ha4">GitHub</a>
+    </p>
+</header>
 
-<h2>About Me</h2>
+<div class="container">
+
+<h2>Profile</h2>
 <p>
-I build Machine Learning and Deep Learning projects using Python,
-Scikit-learn, TensorFlow, and real-world datasets.
+AI/ML student experienced in building and deploying end-to-end machine learning,
+deep learning, and RAG-based systems. Strong in preprocessing, optimization,
+ensembles, and integrating models into real applications using Streamlit and Django.
+</p>
+
+<h2>Skills</h2>
+<p>
+<b>Languages:</b> Python, C++, Java <br>
+<b>ML/DL:</b> Scikit-learn, TensorFlow, Keras, ANN, CNN <br>
+<b>Data:</b> Pandas, NumPy, Matplotlib <br>
+<b>Optimization:</b> SMOTE, Optuna, Feature Selection <br>
+<b>LLM:</b> LangChain, RAG, Vector DB <br>
+<b>Deployment:</b> Django, Streamlit, Docker (basics)
 </p>
 
 <h2>Projects</h2>
 
 <div class="card">
-<h3>Telco Churn Prediction</h3>
-<p>ML pipeline with feature engineering, SMOTE, Optuna tuning.</p>
-<a href="https://github.com/A7-ha4">View Project</a>
+<h3>Telco Customer Churn Prediction</h3>
+<ul>
+<li>Built end-to-end pipeline for imbalanced telecom data.</li>
+<li>SMOTE + encoding + scaling + imputation.</li>
+<li>Optuna tuning (50 trials).</li>
+<li>Soft Voting ensemble (RF + XGB + LGBM + LR).</li>
+<li>~82% accuracy with balanced precision/recall.</li>
+<li>Deployed via Streamlit.</li>
+</ul>
+<a href="https://github.com/A7-ha4">View Code</a>
 </div>
 
 <div class="card">
-<h3>House Price Prediction</h3>
-<p>Advanced regression, pipelines, feature selection.</p>
-<a href="https://github.com/A7-ha4">View Project</a>
+<h3>Brain Tumor Multi-Class Classification (CNN)</h3>
+<ul>
+<li>MRI image preprocessing & normalization.</li>
+<li>CNN with Dropout, callbacks, EarlyStopping.</li>
+<li>Django interface for uploads & predictions.</li>
+</ul>
 </div>
 
-<h2>Skills</h2>
+<div class="card">
+<h3>AI Travel Assistant – RAG</h3>
+<ul>
+<li>LangChain + Ollama (Llama3).</li>
+<li>Embeddings + Chroma retrieval.</li>
+<li>Conversation memory.</li>
+<li>Django-based delivery.</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Higgs Boson Signal Classification</h3>
+<ul>
+<li>ANN with BatchNorm & Dropout.</li>
+<li>AUC monitoring & threshold tuning.</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Customer Segmentation</h3>
+<ul>
+<li>Standardization + PCA (~90% variance).</li>
+<li>Optuna-based cluster tuning.</li>
+<li>Interpretable grouping.</li>
+</ul>
+</div>
+
+<h2>Education</h2>
 <p>
-Python, Scikit-learn, TensorFlow, Pandas, Docker, FastAPI
+B.Tech CSE (AI/ML) <br>
+KR Mangalam University <br>
+2024 – 2028
 </p>
 
-<h2>Contact</h2>
-<p>
-GitHub: <a href="https://github.com/A7-ha4">github.com/A7-ha4</a>
-</p>
+</div>
 
 </body>
 </html>
